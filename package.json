@@ -1,0 +1,31 @@
+{
+  "name": "hash.js",
+  "version": "0.0.1",
+  "description": "Hash library created zbfe",
+  "main": "src/hash.js",
+  "scripts": {
+    "check": "fecs check src/ test/ --reporter=baidu",
+    "test": "karma start karma.conf.js",
+    "test-cov": "karma start karma.conf.cov.js",
+    "hook-install": "prepush install",
+    "hook-remove": "prepush remove"
+  },
+  "prepush": [
+    "npm run check"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbfe/hash.js.git"
+  },
+  "author": "xiaowu",
+  "license": "MIT",
+  "devDependencies": {
+    "fecs": ">=0.6.3",
+    "jasmine-core": ">=2.4.1",
+    "karma": ">=0.13.22",
+    "karma-coverage": ">=0.5.5",
+    "karma-jasmine": ">=0.3.7",
+    "karma-phantomjs-launcher": ">=1.0.0",
+    "prepush": ">=3.1.8"
+  }
+}
