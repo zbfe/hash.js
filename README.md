@@ -58,7 +58,7 @@ Hash library created zbfe
  *
  * @return {Object}            Hash
  */
-    ```
+```
 
 ## Hash.set
 
